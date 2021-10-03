@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>AOS - Animate on scroll library</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <!--  <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#startup">Source Code</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar">
+    <div class="content">
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#startup">Source code</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    </nav>
+
+
+    <div class="banner"></div>
+    <div class="aos-all">
+      
+      <div id = 'home'  data-aos="fade-right">
+        <div class="space"></div>
+        <div class = 'home1'>
+           <p> <br><br>Hi, Welcome to my website, I'd like to create enourmous ideas about technology, I love how technology works.<br>
+         I am working as a Tech developer, Website Designer, Freelancer.<br><br></p>
+
+        <h3>For more info contact me at <br><br> <a class = 'social-icon' href="https://twitter.com/julle_myth"><ion-icon name="logo-twitter"></ion-icon></a><a class = 'social-icon' href="https://www.facebook.com/jullemyth.vicentillo.5"><ion-icon name="logo-facebook"></ion-icon></a><a class = 'social-icon' href="https://www.linkedin.com/in/myth-xenodo-5b405021a/"><ion-icon name="logo-linkedin"></ion-icon></a></h3>
+        </div>
+        <div class= "profile_home"><p class="text"><br>Hi, I'm Jullemyth Vicentillo<br>I'm GameDev, CS, and <br> Technology Enthusiast.
+        </p>
+        </div>                                                     
+      </div>
+
+      <div id = 'project' data-aos="fade-left">
+        <div class="space"></div>
+        <div class = 'project' data-aos="fade-left"> </div>
+        <div class=  "project2" data-aos="fade-right"> </div>
+        <div class=  "project3" data-aos="fade-up"> </div>
+        <div class="space"></div>
+      </div>
+
+      <div id = 'startup' data-aos="fade-right">
+        <div class="space"></div>
+        <div class = 'startup'></div>
+        <div class="space"></div>
+      </div>
+
+      <div id = 'contact' data-aos="fade-left">                                                     
+        <div class="space"></div>
+        <div class = 'contact'>
+          <div class="top-cont"><br><br>                                                                                   
+            <a class = 'social-icon' href="https://twitter.com/julle_myth"><ion-icon name="logo-twitter"></ion-icon></a><a class = 'social-icon' href="https://www.facebook.com/jullemyth.vicentillo.5"><ion-icon name="logo-facebook"></ion-icon></a><a class = 'social-icon' href="https://www.linkedin.com/in/myth-xenodo-5b405021a/"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a class= 'social-icon' href="https://mail.google.com/mail/u/0/#inbox
+"><ion-icon name="logo-google"></ion-icon></a>
+          </div>
+          <div class="bot-cont">mythicalxenon12@gmail.com <br><br> 09633266195 <br><br> https://github.com/Jullemyth122</div>
+        </div>
+
+      </div>
+    
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <script src="dist/aos.js"></script>
+    <script>
+      document.querySelector('html').classList.remove('no-js');
+      if (!window.Cypress) {
+        const scrollCounter = document.querySelector('.js-scroll-counter');
+
+        AOS.init({
+          mirror: true
+        });
+
+        document.addEventListener('aos:in', function(e) {
+          console.log('in!', e.detail);
+        });
+
+        
+      }
+    </script>
+  </body>
+</html>
+
+
+
